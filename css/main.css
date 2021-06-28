@@ -184,6 +184,7 @@ table {
   }
 
   .footer-basic {
+    margin-top: 12px;
     padding:20px 0;
     background-color: #C9AB81;
     color:#000;
