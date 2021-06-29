@@ -117,7 +117,7 @@ nav a:focus {
 }
 
 .menu-section h1{
-    margin-top: 0%;
+    margin-top: 6%;
     text-align: center;
 }
 
@@ -139,6 +139,15 @@ nav a:focus {
     color: #fff;
     font-size: 1.1em;
     line-height: 1.4em;
+}
+
+
+.mobile{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  line-height: 1.6em;
 }
 
 .table-icon{
@@ -187,8 +196,9 @@ table {
     text-transform: uppercase;
   }
 
+
   .footer-basic {
-    margin-top: 2%;
+    margin-top: 12px;
     padding:20px 0;
     background-color: #C9AB81;
     color:#000;
