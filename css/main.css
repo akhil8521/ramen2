@@ -117,7 +117,7 @@ nav a:focus {
 }
 
 .menu-section h1{
-    margin-top: 6%;
+    margin-top: 0%;
     text-align: center;
 }
 
@@ -188,7 +188,7 @@ table {
   }
 
   .footer-basic {
-    margin-top: 12px;
+    margin-top: 2%;
     padding:20px 0;
     background-color: #C9AB81;
     color:#000;
