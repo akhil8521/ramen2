@@ -5,21 +5,22 @@ body {
 }
 
 header {
-    background-color: #000;
-    padding: 0.6em 1.4em;
+  background-color: #000;
+  padding: 0.6em 1.4em;
 }
 
 .container {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .container-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+
 
 h1 {
     font-size: 2.1rem;
@@ -87,14 +88,13 @@ nav a:focus {
     margin-bottom: 2%;
 }
 
-.vistus{
+.flexrow-main{
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-around;
 }
 
-.vistus img{
+.flexrow-main img{
   height: 400px;
   width: 40%;
   object-fit: contain;
@@ -121,19 +121,23 @@ nav a:focus {
     text-align: center;
 }
 
-.about-section {
+.contact-section {
     margin: auto;
     width: 90%;
 }
 
-.about-section h1{
-    margin-top: 6%;
+.contact-section h1{
+    margin: 2% 0%;
     text-align: center;
 }
 
-.about-section p{
+.contact-section h2{
+  color: #C9AB81;
+}
+
+.contact-section p{
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.4em;
 }
 
@@ -190,11 +194,6 @@ table {
     color:#000;
   }
   
-
-  
-
-
-  
   .footer-basic .copyright {
     margin-top:14px;
     text-align:center;
@@ -204,90 +203,106 @@ table {
   }
   
 
+  @media (max-width: 1024px) {
+    .ramen-banner-img{
+      height: 420px;
+      width: 100%;
+    }
+      table {
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        margin: auto;
+        padding: 0;
+        width: 96%;
+        table-layout: fixed;
+        margin-top: 4%;
+      }
+
+  }
+
 @media (max-width: 768px) {
-.container {
-    text-align: center;
-}
+  .container {
+      text-align: center;
+  }
 
-.container-nav {
+  .container-nav {
+      flex-direction: column;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 0.8em 0;
+  }
+
+  .section{
+      margin: auto;
+      width: 90%;
+  }
+
+  .ramen-banner-img{
+      height: 320px;
+      width: 100%;
+  }
+
+  .flexrow-main{
+    display: flex;
     flex-direction: column;
-}
+    justify-content: center;
+  }
 
-nav ul {
-    flex-direction: column;
-}
-
-nav li {
-    margin: 0.8em 0;
-}
-
-.section{
-    margin: auto;
-    width: 90%;
-}
-
-.ramen-banner-img{
-    height: 320px;
+  .flexrow-main img{
+    height: 240px;
     width: 100%;
-}
-
-.vistus{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.vistus img{
-  height: 240px;
-  width: 100%;
-  object-fit: contain;
-  margin-right: 0px;
-}
-
-table {
-    border: 0;
-    width: 90%;
+    object-fit: contain;
+    margin-right: 0px;
   }
 
-  table caption {
-    font-size: 1.3em;
-  }
-  
-  table thead {
-    border: none;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-  }
-  
-  table tr {
-    border-bottom: 3px solid #ddd;
-    display: block;
-    margin-bottom: .625em;
-  }
-  
-  table td {
-    border-bottom: 1px solid #ddd;
-    display: block;
-    font-size: .8em;
-    text-align: right;
-  }
-  
-  table td::before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  table td:last-child {
-    border-bottom: 0;
-  }
+  table {
+      border: 0;
+      width: 90%;
+    }
+
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
 }
 
 @media (max-width: 480px) {
